@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F48CF7A-AEF0-4566-96EC-2C3F5DE5E839}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TokoVBNet.My.MyApplication</StartupObject>
+    <RootNamespace>TokoVBNet</RootNamespace>
+    <AssemblyName>Toko POS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Toko POS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Toko POS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\frm_data_karyawan.Designer.vb">
+      <DependentUpon>frm_data_karyawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_data_karyawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_data_pelanggan.Designer.vb">
+      <DependentUpon>frm_data_pelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_data_pelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_data_barang.Designer.vb">
+      <DependentUpon>frm_data_barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_data_barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_data_lainnya.Designer.vb">
+      <DependentUpon>frm_data_lainnya.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_data_lainnya.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_data_penjualan_tempo.Designer.vb">
+      <DependentUpon>frm_data_penjualan_tempo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_data_penjualan_tempo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_data_penjualan.Designer.vb">
+      <DependentUpon>frm_data_penjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_data_penjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_edit_karyawan.Designer.vb">
+      <DependentUpon>frm_edit_karyawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_edit_karyawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_edit_pelanggan.Designer.vb">
+      <DependentUpon>frm_edit_pelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_edit_pelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_edit_barang.Designer.vb">
+      <DependentUpon>frm_edit_barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_edit_barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_edit_lainnya.Designer.vb">
+      <DependentUpon>frm_edit_lainnya.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_edit_lainnya.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_edit_penjualan.Designer.vb">
+      <DependentUpon>frm_edit_penjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_edit_penjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_edit_servis .Designer.vb">
+      <DependentUpon>frm_edit_servis .vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_edit_servis .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_data_servis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_data_servis.Designer.vb">
+      <DependentUpon>frm_data_servis.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frm_menu_admin.Designer.vb">
+      <DependentUpon>frm_menu_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frm_menu_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\mod_DGV.vb" />
+    <Compile Include="Module\mod_Extension.vb" />
+    <Compile Include="Module\mod_Global.vb" />
+    <Compile Include="Module\mod_Laporan.vb" />
+    <Compile Include="Module\mod_Log.vb" />
+    <Compile Include="Module\mod_MySQL.vb" />
+    <Compile Include="Module\mod_Transaction.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\frm_data_karyawan.resx">
+      <DependentUpon>frm_data_karyawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_data_pelanggan.resx">
+      <DependentUpon>frm_data_pelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_data_barang.resx">
+      <DependentUpon>frm_data_barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_data_lainnya.resx">
+      <DependentUpon>frm_data_lainnya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_data_penjualan_tempo.resx">
+      <DependentUpon>frm_data_penjualan_tempo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_data_penjualan.resx">
+      <DependentUpon>frm_data_penjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_edit_karyawan.resx">
+      <DependentUpon>frm_edit_karyawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_edit_pelanggan.resx">
+      <DependentUpon>frm_edit_pelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_edit_barang.resx">
+      <DependentUpon>frm_edit_barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_edit_lainnya.resx">
+      <DependentUpon>frm_edit_lainnya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_edit_penjualan.resx">
+      <DependentUpon>frm_edit_penjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_edit_servis .resx">
+      <DependentUpon>frm_edit_servis .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_data_servis.resx">
+      <DependentUpon>frm_data_servis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frm_menu_admin.resx">
+      <DependentUpon>frm_menu_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Costura.Fody">
+      <Version>5.7.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="MySqlConnector">
+      <Version>2.3.7</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\change.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\edit_2.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\presentation.png" />
+    <None Include="Resources\data.png" />
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
